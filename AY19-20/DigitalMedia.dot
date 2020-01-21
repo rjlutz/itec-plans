@@ -78,6 +78,7 @@ digraph G {
             itec2140 -> itec3450 [color=purple]
 
             itec2201 -> itec3900 [ltail=cluster22013100 color=blue]
+            itec2201 -> mgmt3000 [ltail=cluster22013100 color=blue]
 
             math1113 -> math2200
             math1111 -> math2000
