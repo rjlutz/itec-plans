@@ -5,73 +5,6 @@ digraph G {
     splines = true
     ranksep=0.75
 
-    // itec1001[label = "ITEC 1001\nIntroduction \nto Computing" color=darkgray fontcolor=darkgray]
-    // itec2110[label = "ITEC 2110\nDigital Media"]
-    // itec2120[label = "ITEC 2120\nIntroduction\nto Programming"]
-    // itec2130[label = "ITEC 2130\nWeb Technologies"]
-    // itec2140[label = "ITEC 2140\nProgramming \nFundamentals" color=purple fontcolor=purple]
-    // itec2150[label = "ITEC 2150\nIntermediate Programming" color=red fontcolor=red]
-    // itec3150[label = "ITEC 3150\nAdvanced Programming"]
-    // itec2201[label = "ITEC 2201\nIntrodcution to\nInformation Systems" color=blue fontcolor=blue]
-    // itec3100[label = "ITEC 3100\nIntrodcution to Networks"]
-    // itec3200[label = "ITEC 3200\nIntrodcution to Databases"]
-    // // itec3300[label = "ITEC 3300\nInformation Security"]
-    // itec3350[label = "ITEC 3350\nDigital Commerce"]
-    // // itec3450[label = "ITEC 3450\nComputer Graphics\nand Multimedia"]
-    // // itec3600[label = "ITEC 3600\nOperating Systems"]
-    // itec3700[label = "ITEC 3700\nSystems Analysis\nand Design"]
-    // itec3860[label = "ITEC 3860\nSoftware Development I"]
-    // itec3870[label = "ITEC 3870\nSoftware Development II"]
-    // itec3900[label = "ITEC 3900\nProfessional Practice\nand Ethics"]
-    // itec4100[label = "ITEC 4100\nAdvanced Networks"]
-    // itec4150[label = "ITEC 4150\nEnterprise Process Integration"]
-    // itec4200[label = "ITEC 4200\nAdvanced Databases"]
-    // itec4210[label = "ITEC 4210\nInformation Analytics"]
-    // itec4220[label = "ITEC 4220\nAdvanced Data Analytics"]
-    // itec4230[label = "ITEC 4230\nData Science & Analytics Capstone Project"]
-    // // itec4260[label = "ITEC 4260\nSoftware Testing and QA"]
-    // // itec4320[label = "ITEC 4320\nInternet Security"]
-    // // itec4330[label = "ITEC 4330\nSystems Administration"]
-    // itec4750[label = "ITEC 4750\nEnterprise Architecture Design"]
-    // // itec4810[label = "ITEC 4810\nIT Project I"]
-    // // itec4860[label = "ITEC 4860\nSoftware Development\nProject"]
-    // // itec4450[label = "ITEC 4450\nWeb Development"]
-    // // itec4550[label = "ITEC 4550\nMobile Application\nDevelopment"]
-    // // itec4650[label = "ITEC 4650\nGame Development"]
-    // // itec4900[label = "ITEC 4900\nInformation Technology Internship"]
-    // // stec4500[label = "STEC 4500\nUndergraduate Research"]
-    // itec4700[label = "ITEC 4700\nArtificial Intelligence"]
-    // // areaF[label = "Area F Completed"]
-    // // instructorapproval[label = "Instructor Approval"]
-
-    // // acct2101[label = "ACCT 2101\nIntroduction to Financial Accounting"]
-    // // acct2102[label = "ACCT 2102\nIntroduction to Mangerial Accounting"]
-    // busa2105[label = "BUSA 2105\nCommunications in\nthe Business Environment"]
-    // busa2106[label = "BUSA 2106\nLegal Environment\nof Business"]
-    // busa3100[label = "BUSA 3100\nManagement \nInformation Systems"]
-    // busb3100[label = "BUSA 3100\nManagement \nInformation Systems"] //  a hack, a copy
-    
-    // mgmt3000[label = "MGMT 3000\nPrinciples of\nManagement"]
-    // mgmt4220[label = "MGMT 4220\nProject Management"]
-
-    // math1111[label = "MATH 1111\nCollege Algebra"]
-    // math2300[label = "MATH 2300\nDiscrete Math"]
-    // math1113[label = "MATH 1113\nPre-Calculus"]
-    // math2000[label = "MATH 2000\nStatistics"]
-    // math2200[label = "MATH 2200\nCalculus I"]
-    // // math2210[label = "MATH 2210\nCalculus II"]
-    // math2450[label = "MATH 2450\nLinear Algebra"]
-
-    // // phys2211k[label = "PHYS 2211K\nPrinciples of\nPhysics I"]
-    // // phys2212k[label = "PHYS 2212K\nPrinciples of\nPhysics II"]
-
-    // // biol1107k[label = "BIOL 1107K\nPrinciples of\nBiology I"]
-    // // biol1108k[label = "BIOL 1107K\nPrinciples of\nBiology II"]
-
-    // domain1[label = "Domain Elective 1"]
-    // domain2[label = "Domain Elective 2"]
-    // domain3[label = "Domain Elective 3"]
-
      // All
     itec1001[label = "ITEC 1001\nIntroduction \nto Computing" color=darkgray fontcolor=darkgray]
     itec2110[label = "ITEC 2110\nDigital Media"]
@@ -82,7 +15,6 @@ digraph G {
     itec2201[label = "ITEC 2201\nIntrodcution to\nInformation Systems" color=blue fontcolor=blue]
     itec3100[label = "ITEC 3100\nIntrodcution to Networks"]
     itec3200[label = "ITEC 3200\nIntrodcution to Databases"]
-    itec3450[label = "ITEC 3450\nComputer Graphics\nand Multimedia"]
     itec3900[label = "ITEC 3900\nProfessional Practice\nand Ethics"]
     busa2105[label = "BUSA 2105\nCommunications in\nthe Business Environment"]
     busa2106[label = "BUSA 2106\nLegal Environment\nof Business"]
@@ -94,6 +26,7 @@ digraph G {
 
     // Software Development 
     // itec3150[label = "ITEC 3150\nAdvanced Programming"]
+    // itec3450[label = "ITEC 3450\nComputer Graphics\nand Multimedia"]
     // itec3700[label = "ITEC 3700\nSystems Analysis\nand Design"]
     // itec3860[label = "ITEC 3860\nSoftware Development I"]
     // itec3870[label = "ITEC 3870\nSoftware Development II"]
@@ -144,8 +77,12 @@ digraph G {
     // mgmt4220[label = "MGMT 4220\nProject Management"]
 
     // Data Science and Analytics
+    itec3150[label = "ITEC 3150\nAdvanced Programming"]
+    itec3700[label = "ITEC 3700\nSystems Analysis\nand Design"]
     itec3860[label = "ITEC 3860\nSoftware Development I"]
+    itec3870[label = "ITEC 3870\nSoftware Development II"]
     itec4150[label = "ITEC 4150\nEnterprise Process Integration"]
+    itec4200[label = "ITEC 4200\nAdvanced Databases"]
     itec4210[label = "ITEC 4210\nInformation Analytics"]
     itec4220[label = "ITEC 4220\nAdvanced Data Analytics"]
     itec4230[label = "ITEC 4230\nData Science & Analytics Capstone Project"]
@@ -155,7 +92,7 @@ digraph G {
     domain1[label = "Domain Elective 1"]
     domain2[label = "Domain Elective 2"]
     domain3[label = "Domain Elective 3"]
-    math2210[label = "MATH 2210\nCalculus II"]
+    math1111[label = "MATH 1111\nCollege Algebra"]
     math2450[label = "MATH 2450\nLinear Algebra"]
 
     // Digital Media
@@ -199,15 +136,12 @@ digraph G {
             itec2201 -> itec3200 [ltail=cluster22013100 color=blue]
             itec2140 -> itec3200 [ltail=cluster21202140 color=purple]
 
-            itec2201 -> itec3350 [ltail=cluster22013100 color=blue]
             itec2150 -> itec4150 [color=red]
             itec3200 -> itec4150
             itec3700 -> itec4150
             itec2201 -> itec4750 [color=blue]
             itec4150 -> itec4750
-            itec2201 -> mgmt4220 [color=blue]
-            mgmt3000 -> mgmt4220 [ltail=cluster30003100]
-
+            
             busa2106 -> busa3100
             busa2105 -> busa3100
             itec1001 -> itec2140 [color=lightgray]
@@ -236,7 +170,6 @@ digraph G {
             math1111 -> math2000
             math1111 -> math2300 [lhead=clusterdiscrete]
            
-            itec3100 -> itec4100
             itec3200 -> itec4200
 
             subgraph cluster21202140 {
@@ -280,16 +213,25 @@ digraph G {
                 graph[style=solid]
                 color=black;
 
-                subgraph clusteritecopt1 {
-                    label = "Enterprise";
-                    itec4150
-                    itec4750
-                }
 
-                subgraph clusteritecopt2 {
-                    label = "Data Scientist";
-                    itec3870
-                    itec4200
+                subgraph clusteritecoptions {
+                    label = "Pick from Enterprise or Software Sequence"
+                    node [style=filled];
+                    style=filled;
+                    graph[style=solid]
+                    color=black;
+
+                    subgraph clusteritecopt1 {
+                        label = "Enterprise";
+                        itec4150
+                        itec4750
+                    }
+
+                    subgraph clusteritecopt2 {
+                        label = "Software";
+                        itec3870
+                        itec4200
+                    }
                 }
 
                 subgraph clusterdomain {

@@ -77,8 +77,12 @@ digraph G {
     // mgmt4220[label = "MGMT 4220\nProject Management"]
 
     // Data Science and Analytics
+    // itec3150[label = "ITEC 3150\nAdvanced Programming"]
+    // itec3700[label = "ITEC 3700\nSystems Analysis\nand Design"]
     // itec3860[label = "ITEC 3860\nSoftware Development I"]
+    // itec3870[label = "ITEC 3870\nSoftware Development II"]
     // itec4150[label = "ITEC 4150\nEnterprise Process Integration"]
+    // itec4200[label = "ITEC 4200\nAdvanced Databases"]
     // itec4210[label = "ITEC 4210\nInformation Analytics"]
     // itec4220[label = "ITEC 4220\nAdvanced Data Analytics"]
     // itec4230[label = "ITEC 4230\nData Science & Analytics Capstone Project"]
@@ -88,7 +92,7 @@ digraph G {
     // domain1[label = "Domain Elective 1"]
     // domain2[label = "Domain Elective 2"]
     // domain3[label = "Domain Elective 3"]
-    // math2210[label = "MATH 2210\nCalculus II"]
+    // math1111[label = "MATH 1111\nCollege Algebra"]
     // math2450[label = "MATH 2450\nLinear Algebra"]
 
     // Digital Media
@@ -143,8 +147,6 @@ digraph G {
 
             itec2140 -> itec3450 [color=purple]
 
-            itec2150 -> itec3700 [lltail=clusterdiscrete color=red]
-            itec2201 -> itec3700 [color=blue]
             itec2201 -> itec3900 [ltail=cluster22013100 color=blue]
 
             math1113 -> math2200
@@ -162,6 +164,7 @@ digraph G {
 
             arts2020
             arts2010
+
             subgraph cluster21202140 {
                 label = "Introductory Programming";
                 color=lightgrey;
