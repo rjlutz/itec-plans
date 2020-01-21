@@ -3,49 +3,9 @@ digraph G {
     node [shape = record, fontname="Sans serif" fontsize="14"];
     compound = true //  needed to link clusters and nodes
     splines = true
-    ranksep=0.75
+    ranksep=0.1
 
-    // itec1001[label = "ITEC 1001\nIntroduction \nto Computing" color=darkgray fontcolor=darkgray]
-    // itec2110[label = "ITEC 2110\nDigital Media"]
-    // itec2120[label = "ITEC 2120\nIntroduction\nto Programming"]
-    // itec2130[label = "ITEC 2130\nWeb Technologies"]
-    // itec2140[label = "ITEC 2140\nProgramming \nFundamentals" color=purple fontcolor=purple]
-    // itec2150[label = "ITEC 2150\nIntermediate Programming" color=red fontcolor=red]
-    // itec3150[label = "ITEC 3150\nAdvanced Programming"]
-    // itec2201[label = "ITEC 2201\nIntrodcution to\nInformation Systems" color=blue fontcolor=blue]
-    // itec3100[label = "ITEC 3100\nIntrodcution to Networks"]
-    // itec3200[label = "ITEC 3200\nIntrodcution to Databases"]
-    // itec3450[label = "ITEC 3450\nComputer Graphics\nand Multimedia"]
-    // itec3700[label = "ITEC 3700\nSystems Analysis\nand Design"]
-    // itec3860[label = "ITEC 3860\nSoftware Development I"]
-    // itec3870[label = "ITEC 3870\nSoftware Development II"]
-    // itec3900[label = "ITEC 3900\nProfessional Practice\nand Ethics"]
-    // itec4260[label = "ITEC 4260\nSoftware Testing and QA"]
-    // itec4860[label = "ITEC 4860\nSoftware Development\nProject"]
-    // itec4450[label = "ITEC 4450\nWeb Development"]
-    // itec4550[label = "ITEC 4550\nMobile Application\nDevelopment"]
-    // itec4650[label = "ITEC 4650\nGame Development"]
-
-    // busa2105[label = "BUSA 2105\nCommunications in\nthe Business Environment"]
-    // busa2106[label = "BUSA 2106\nLegal Environment\nof Business"]
-    // busa3100[label = "BUSA 3100\nManagement \nInformation Systems"]
-    // mgmt3000[label="MGMT 3000\nPrinciples of\nManagement"]
-
-    // math1111[label = "MATH 1111\nCollege Algebra"]
-    // math2300[label = "MATH 2300\nDiscrete Math"]
-    // math1113[label = "MATH 1113\nPre-Calculus"]
-    // math2000[label = "MATH 2000\nStatistics"]
-    // math2200[label = "MATH 2200\nCalculus I"]
-    // math2210[label = "MATH 2210\nCalculus II"]
-    // math2450[label = "MATH 2450\nLinear Algebra"]
-
-    // phys2211k[label = "PHYS 2211K\nPrinciples of\nPhysics I"]
-    // phys2212k[label = "PHYS 2212K\nPrinciples of\nPhysics II"]
-
-    // biol1107k[label = "BIOL 1107K\nPrinciples of\nBiology I"]
-    // biol1108k[label = "BIOL 1107K\nPrinciples of\nBiology II"]
-
-     // All
+    // All
     itec1001[label = "ITEC 1001\nIntroduction \nto Computing" color=darkgray fontcolor=darkgray]
     itec2110[label = "ITEC 2110\nDigital Media"]
     itec2120[label = "ITEC 2120\nIntroduction\nto Programming"]
@@ -66,22 +26,22 @@ digraph G {
     math2200[label = "MATH 2200\nCalculus I"]
 
     // Software Development 
-    itec3150[label = "ITEC 3150\nAdvanced Programming"]
-    itec3700[label = "ITEC 3700\nSystems Analysis\nand Design"]
-    itec3860[label = "ITEC 3860\nSoftware Development I"]
-    itec3870[label = "ITEC 3870\nSoftware Development II"]
-    itec4100[label = "ITEC 4100\nAdvanced Networks"]
-    itec4260[label = "ITEC 4260\nSoftware Testing and QA"]
-    itec4860[label = "ITEC 4860\nSoftware Development\nProject"]
-    itec4450[label = "ITEC 4450\nWeb Development"]
-    itec4550[label = "ITEC 4550\nMobile Application\nDevelopment"]
-    itec4650[label = "ITEC 4650\nGame Development"]
-    math2210[label = "MATH 2210\nCalculus II"]
-    math2450[label = "MATH 2450\nLinear Algebra"]
-    phys2211k[label = "PHYS 2211K\nPrinciples of\nPhysics I"]
-    phys2212k[label = "PHYS 2212K\nPrinciples of\nPhysics II"]
-    biol1107k[label = "BIOL 1107K\nPrinciples of\nBiology I"]
-    biol1108k[label = "BIOL 1107K\nPrinciples of\nBiology II"]
+    // itec3150[label = "ITEC 3150\nAdvanced Programming"]
+    // itec3700[label = "ITEC 3700\nSystems Analysis\nand Design"]
+    // itec3860[label = "ITEC 3860\nSoftware Development I"]
+    // itec3870[label = "ITEC 3870\nSoftware Development II"]
+    // itec4100[label = "ITEC 4100\nAdvanced Networks"]
+    // itec4260[label = "ITEC 4260\nSoftware Testing and QA"]
+    // itec4860[label = "ITEC 4860\nSoftware Development\nProject"]
+    // itec4450[label = "ITEC 4450\nWeb Development"]
+    // itec4550[label = "ITEC 4550\nMobile Application\nDevelopment"]
+    // itec4650[label = "ITEC 4650\nGame Development"]
+    // math2210[label = "MATH 2210\nCalculus II"]
+    // math2450[label = "MATH 2450\nLinear Algebra"]
+    // phys2211k[label = "PHYS 2211K\nPrinciples of\nPhysics I"]
+    // phys2212k[label = "PHYS 2212K\nPrinciples of\nPhysics II"]
+    // biol1107k[label = "BIOL 1107K\nPrinciples of\nBiology I"]
+    // biol1108k[label = "BIOL 1107K\nPrinciples of\nBiology II"]
 
     //Systems and Seurity
     // itec3300[label = "ITEC 3300\nInformation Security"]
@@ -132,27 +92,27 @@ digraph G {
     // math2450[label = "MATH 2450\nLinear Algebra"]
 
     // Digital Media
-    // itec3450[label = "ITEC 3450\nComputer Graphics\nand Multimedia"]
-    // itec4110[label = "ITEC 4110\nDigital Media Capstone Project"]
-    // itec4130[label = "ITEC 4130\nHuman Computer Interaction"]
-    // itec4450[label = "ITEC 4450\nWeb Development"]
-    // itec4550[label = "ITEC 4550\nMobile Application\nDevelopment"]
-    // itec4650[label = "ITEC 4650\nGame Development"]
-    // areaC[label = "Area C Completed"]
-    // arts2010[label = "ARTS 2010\nDrawing I"]
-    // arts2020[label = "ARTS 2020\nDrawing II"]
-    // math1111[label = "MATH 1111\nCollege Algebra"]
-    // engl1101[label = "ENGL 1101\nEnglish Composition I"]
-    // engl1102[label = "ENGL 1102\nEnglish Composition II"]
-    // engl3880[label = "ENGL 3880\nWriting and Digital Media"]
-    // film1005[label = "FILM 1005\nIntroduction\nto Film"] 
-    // film3010[label = "FILM 3010\nVideo Production I"]
-    // musc3050[label = "MUSC 3050\nMusic Theory I"]
-    // musc3550[label = "MUSC 3550\nMusic Production and Sound Design"]
+    itec3450[label = "ITEC 3450\nComputer Graphics\nand Multimedia"]
+    itec4110[label = "ITEC 4110\nDigital Media Capstone Project"]
+    itec4130[label = "ITEC 4130\nHuman Computer Interaction"]
+    itec4450[label = "ITEC 4450\nWeb Development"]
+    itec4550[label = "ITEC 4550\nMobile Application\nDevelopment"]
+    itec4650[label = "ITEC 4650\nGame Development"]
+    areaC[label = "Area C Completed"]
+    arts2010[label = "ARTS 2010\nDrawing I"]
+    arts2020[label = "ARTS 2020\nDrawing II"]
+    math1111[label = "MATH 1111\nCollege Algebra"]
+    engl1101[label = "ENGL 1101\nEnglish Composition I"]
+    engl1102[label = "ENGL 1102\nEnglish Composition II"]
+    engl3880[label = "ENGL 3880\nWriting and Digital Media"]
+    film1005[label = "FILM 1005\nIntroduction\nto Film"] 
+    film3010[label = "FILM 3010\nVideo Production I"]
+    musc3050[label = "MUSC 3050\nMusic Theory I"]
+    musc3550[label = "MUSC 3550\nMusic Production and Sound Design"]
+    
 
-
-    subgraph clustersd {
-        label="GGC Information Technology\nSoftware Development Track\nAY19-20"
+    subgraph clusterdm {
+        label="GGC Information Technology\nDigital Media Track\nAY19-20"
 
         subgraph clusterrequired {
             label=""
@@ -161,6 +121,11 @@ digraph G {
 
             color="#FFFFFF";
             
+            engl1101 -> engl1102 -> engl3880
+            film1005 -> film3010
+            itec2110 -> film3010
+            areaC -> musc3050
+
             itec1001 -> itec2110 [color=lightgray]
             itec1001 -> itec2120 [color=lightgray]
             itec1001 -> itec2130 [color=lightgray]
@@ -171,34 +136,32 @@ digraph G {
             busa2105 -> busa3100
             itec1001 -> itec2140 [color=lightgray]
             itec2140 -> itec2150 [color=purple]
-            itec2150 -> itec3150 [lltail=clusterdiscrete color=red]
 
             itec2140 -> itec3100 [color=purple]
             itec2201 -> itec3200 [color=blue ltail=cluster22013100];
             itec2140 -> itec3200 [ltail=cluster21202140 color=purple]
 
+            itec2140 -> itec3450 [color=purple]
+
             itec2150 -> itec3700 [lltail=clusterdiscrete color=red]
             itec2201 -> itec3700 [color=blue]
-
-            itec2150 -> itec3860 [color=red]
-            itec2201 -> itec3860 [color=blue]
-            itec3860 -> itec3870
             itec2201 -> itec3900 [ltail=cluster22013100 color=blue]
-            itec3860 -> itec4260 -> itec4860
-            itec2201 -> mgmt3000 [ltail=cluster22013100 color=blue]
 
             math1113 -> math2200
             math1111 -> math2000
             math1111 -> math2300 [lhead=clusterdiscrete]
-            math2200 -> math2210 [lhead=clustermathopt]
             itec3200 -> itec4450
 
             math1113 -> itec3450
-            itec2110 -> itec3450 [lhead=clusteritecopt2]
-            itec2110 -> itec4550 [lhead=clusteritecopt2]
-            math2200 -> phys2211k [lhead=clusterphysopt]
+            itec2110 -> itec3450
+            itec2110 -> itec4550 [lhead=clusteritecopt1]
             itec2150 -> itec4550 [color=red]
+            
+            itec4450 -> itec4110 [label="pick 2 of 4"]
+            itec4130 -> itec4110 [ltail=clusteritecopt1 label="pick 2 of 4"]
 
+            arts2020
+            arts2010
             subgraph cluster21202140 {
                 label = "Introductory Programming";
                 color=lightgrey;
@@ -232,34 +195,21 @@ digraph G {
                 style=filled;
                 graph[style=solid]
                 color=black;
+                // {rank=same; "engl3880"; "itec4650"}
 
                 subgraph clusteritecopt1 {
-                    label = "ITEC Option 1";
-                    itec2130 -> itec4450
-                    itec2150 -> itec4450 [color=red]
+                    label = "Select 2";
+                    itec4130
+                    itec4550
+                    itec4650
                 }
 
                 subgraph clusteritecopt2 {
-                    label = "ITEC Option 2\n(Select 2)";
-                    itec2140 -> itec3450 [color=purple]
-                    itec3450 -> itec4650
-                    itec4550
-                }
-
-                subgraph clusterbiolopt {
-                    label = "Biology Option";
-                    biol1107k -> biol1108k
-                }
-
-                subgraph clustermathopt {
-                    label = "Math Option";
-                    math2210 -> math2450
-                }
-
-                subgraph clusterphysopt {
-                    label = "Physics Option"
-                    phys2211k -> phys2212k
-                }
+                    label = "Select 1 or 2";
+                    engl3880
+                    film3010
+                    musc3050 -> musc3550
+                }                
             }
         }    
     }

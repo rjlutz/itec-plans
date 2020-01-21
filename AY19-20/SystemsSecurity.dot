@@ -15,16 +15,23 @@ digraph G {
     // itec2201[label = "ITEC 2201\nIntrodcution to\nInformation Systems" color=blue fontcolor=blue]
     // itec3100[label = "ITEC 3100\nIntrodcution to Networks"]
     // itec3200[label = "ITEC 3200\nIntrodcution to Databases"]
-    // itec3450[label = "ITEC 3450\nComputer Graphics\nand Multimedia"]
+    // itec3300[label = "ITEC 3300\nInformation Security"]
+    // //itec3450[label = "ITEC 3450\nComputer Graphics\nand Multimedia"]
+    // itec3600[label = "ITEC 3600\nOperating Systems"]
     // itec3700[label = "ITEC 3700\nSystems Analysis\nand Design"]
-    // itec3860[label = "ITEC 3860\nSoftware Development I"]
-    // itec3870[label = "ITEC 3870\nSoftware Development II"]
+    // //itec3860[label = "ITEC 3860\nSoftware Development I"]
+    // //itec3870[label = "ITEC 3870\nSoftware Development II"]
     // itec3900[label = "ITEC 3900\nProfessional Practice\nand Ethics"]
-    // itec4260[label = "ITEC 4260\nSoftware Testing and QA"]
-    // itec4860[label = "ITEC 4860\nSoftware Development\nProject"]
+    // itec4100[label = "ITEC 4100\nAdvanced Networks"]
+    // itec4200[label = "ITEC 4200\nAdvanced Databases"]
+    // // itec4260[label = "ITEC 4260\nSoftware Testing and QA"]
+    // itec4320[label = "ITEC 4320\nInternet Security"]
+    // itec4330[label = "ITEC 4330\nSystems Administration"]
+    // itec4810[label = "ITEC 4810\nIT Project I"]
+    // // itec4860[label = "ITEC 4860\nSoftware Development\nProject"]
     // itec4450[label = "ITEC 4450\nWeb Development"]
-    // itec4550[label = "ITEC 4550\nMobile Application\nDevelopment"]
-    // itec4650[label = "ITEC 4650\nGame Development"]
+    // // itec4550[label = "ITEC 4550\nMobile Application\nDevelopment"]
+    // // itec4650[label = "ITEC 4650\nGame Development"]
 
     // busa2105[label = "BUSA 2105\nCommunications in\nthe Business Environment"]
     // busa2106[label = "BUSA 2106\nLegal Environment\nof Business"]
@@ -66,39 +73,39 @@ digraph G {
     math2200[label = "MATH 2200\nCalculus I"]
 
     // Software Development 
-    itec3150[label = "ITEC 3150\nAdvanced Programming"]
-    itec3700[label = "ITEC 3700\nSystems Analysis\nand Design"]
-    itec3860[label = "ITEC 3860\nSoftware Development I"]
-    itec3870[label = "ITEC 3870\nSoftware Development II"]
-    itec4100[label = "ITEC 4100\nAdvanced Networks"]
-    itec4260[label = "ITEC 4260\nSoftware Testing and QA"]
-    itec4860[label = "ITEC 4860\nSoftware Development\nProject"]
-    itec4450[label = "ITEC 4450\nWeb Development"]
-    itec4550[label = "ITEC 4550\nMobile Application\nDevelopment"]
-    itec4650[label = "ITEC 4650\nGame Development"]
-    math2210[label = "MATH 2210\nCalculus II"]
-    math2450[label = "MATH 2450\nLinear Algebra"]
-    phys2211k[label = "PHYS 2211K\nPrinciples of\nPhysics I"]
-    phys2212k[label = "PHYS 2212K\nPrinciples of\nPhysics II"]
-    biol1107k[label = "BIOL 1107K\nPrinciples of\nBiology I"]
-    biol1108k[label = "BIOL 1107K\nPrinciples of\nBiology II"]
-
-    //Systems and Seurity
-    // itec3300[label = "ITEC 3300\nInformation Security"]
-    // itec3600[label = "ITEC 3600\nOperating Systems"]
+    // itec3150[label = "ITEC 3150\nAdvanced Programming"]
     // itec3700[label = "ITEC 3700\nSystems Analysis\nand Design"]
+    // itec3860[label = "ITEC 3860\nSoftware Development I"]
+    // itec3870[label = "ITEC 3870\nSoftware Development II"]
     // itec4100[label = "ITEC 4100\nAdvanced Networks"]
-    // itec4200[label = "ITEC 4200\nAdvanced Databases"]
-    // itec4320[label = "ITEC 4320\nInternet Security"]
-    // itec4330[label = "ITEC 4330\nSystems Administration"]
+    // itec4260[label = "ITEC 4260\nSoftware Testing and QA"]
+    // itec4860[label = "ITEC 4860\nSoftware Development\nProject"]
     // itec4450[label = "ITEC 4450\nWeb Development"]
-    // itec4810[label = "ITEC 4810\nIT Project I"]
+    // itec4550[label = "ITEC 4550\nMobile Application\nDevelopment"]
+    // itec4650[label = "ITEC 4650\nGame Development"]
     // math2210[label = "MATH 2210\nCalculus II"]
     // math2450[label = "MATH 2450\nLinear Algebra"]
     // phys2211k[label = "PHYS 2211K\nPrinciples of\nPhysics I"]
     // phys2212k[label = "PHYS 2212K\nPrinciples of\nPhysics II"]
     // biol1107k[label = "BIOL 1107K\nPrinciples of\nBiology I"]
     // biol1108k[label = "BIOL 1107K\nPrinciples of\nBiology II"]
+
+    //Systems and Seurity
+    itec3300[label = "ITEC 3300\nInformation Security"]
+    itec3600[label = "ITEC 3600\nOperating Systems"]
+    itec3700[label = "ITEC 3700\nSystems Analysis\nand Design"]
+    itec4100[label = "ITEC 4100\nAdvanced Networks"]
+    itec4200[label = "ITEC 4200\nAdvanced Databases"]
+    itec4320[label = "ITEC 4320\nInternet Security"]
+    itec4330[label = "ITEC 4330\nSystems Administration"]
+    itec4450[label = "ITEC 4450\nWeb Development"]
+    itec4810[label = "ITEC 4810\nIT Project I"]
+    math2210[label = "MATH 2210\nCalculus II"]
+    math2450[label = "MATH 2450\nLinear Algebra"]
+    phys2211k[label = "PHYS 2211K\nPrinciples of\nPhysics I"]
+    phys2212k[label = "PHYS 2212K\nPrinciples of\nPhysics II"]
+    biol1107k[label = "BIOL 1107K\nPrinciples of\nBiology I"]
+    biol1108k[label = "BIOL 1107K\nPrinciples of\nBiology II"]
 
     // Enterprise Systems
     // itec3350[label = "ITEC 3350\nDigital Commerce"]
@@ -152,7 +159,7 @@ digraph G {
 
 
     subgraph clustersd {
-        label="GGC Information Technology\nSoftware Development Track\nAY19-20"
+        label="GGC Information Technology\nSystems and Security Track\nAY19-20"
 
         subgraph clusterrequired {
             label=""
@@ -160,31 +167,40 @@ digraph G {
             style=filled;
 
             color="#FFFFFF";
-            
-            itec1001 -> itec2110 [color=lightgray]
+
+            itec1001 -> itec2110  [color=lightgray]
             itec1001 -> itec2120 [color=lightgray]
             itec1001 -> itec2130 [color=lightgray]
             itec1001 -> itec2201 [color=lightgray]
             itec1001 -> busa3100 [color=lightgray]
+            itec2140 -> itec2150 [color=purple]
+            itec2140 -> itec3100 [color=purple]
+            itec2150 -> itec3150 [lltail=clusterdiscrete color=red]
+            itec2201 -> itec3200 [ltail=cluster22013100 color=blue]
+            itec2140 -> itec3200 [ltail=cluster21202140 color=purple]
+
+            itec2201 -> itec3300 [ltail=cluster22013100 color=blue]
+            itec2140 -> itec3300 [ltail=cluster21202140 color=purple]
+            itec2150 -> itec3600 
+            itec2201 -> itec3600
+            itec2150 -> itec4320
+            itec3100 -> itec4320
+            itec3300 -> itec4320
+            itec3100 -> itec4330
+            itec3600 -> itec4330
+            itec3100 -> itec4810
+            itec3200 -> itec4810
+            itec3300 -> itec4810
+            itec3700 -> itec4810
 
             busa2106 -> busa3100
             busa2105 -> busa3100
             itec1001 -> itec2140 [color=lightgray]
-            itec2140 -> itec2150 [color=purple]
-            itec2150 -> itec3150 [lltail=clusterdiscrete color=red]
-
-            itec2140 -> itec3100 [color=purple]
-            itec2201 -> itec3200 [color=blue ltail=cluster22013100];
-            itec2140 -> itec3200 [ltail=cluster21202140 color=purple]
 
             itec2150 -> itec3700 [lltail=clusterdiscrete color=red]
             itec2201 -> itec3700 [color=blue]
 
-            itec2150 -> itec3860 [color=red]
-            itec2201 -> itec3860 [color=blue]
-            itec3860 -> itec3870
             itec2201 -> itec3900 [ltail=cluster22013100 color=blue]
-            itec3860 -> itec4260 -> itec4860
             itec2201 -> mgmt3000 [ltail=cluster22013100 color=blue]
 
             math1113 -> math2200
@@ -193,11 +209,7 @@ digraph G {
             math2200 -> math2210 [lhead=clustermathopt]
             itec3200 -> itec4450
 
-            math1113 -> itec3450
-            itec2110 -> itec3450 [lhead=clusteritecopt2]
-            itec2110 -> itec4550 [lhead=clusteritecopt2]
             math2200 -> phys2211k [lhead=clusterphysopt]
-            itec2150 -> itec4550 [color=red]
 
             subgraph cluster21202140 {
                 label = "Introductory Programming";
@@ -240,10 +252,9 @@ digraph G {
                 }
 
                 subgraph clusteritecopt2 {
-                    label = "ITEC Option 2\n(Select 2)";
-                    itec2140 -> itec3450 [color=purple]
-                    itec3450 -> itec4650
-                    itec4550
+                    label = "ITEC Option 2";
+                    itec3100 -> itec4100
+                    itec3200 -> itec4200
                 }
 
                 subgraph clusterbiolopt {
