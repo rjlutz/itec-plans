@@ -88,6 +88,7 @@ digraph G {
             itec3200 -> itec4210
             itec4210 -> itec4220
             math2000 -> itec4220
+            math2200 -> math2450
             math2450 -> itec4220
             itec3860 -> itec4230
             itec4220 -> itec4230
