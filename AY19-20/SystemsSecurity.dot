@@ -95,6 +95,7 @@ digraph G {
             math1111 -> math2000
             math1111 -> math2300 [lhead=clusterdiscrete]
             math2200 -> math2210 [lhead=clustermathopt]
+            math2200 -> math2450 [lhead=clustermathopt]
             itec3200 -> itec4450
 
             math2200 -> phys2211k [lhead=clusterphysopt]
@@ -152,7 +153,8 @@ digraph G {
 
                 subgraph clustermathopt {
                     label = "Math Option";
-                    math2200 -> math2450
+                    math2210
+                    math2450
                 }
 
                 subgraph clusterphysopt {
