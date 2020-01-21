@@ -160,7 +160,8 @@ digraph G {
 
                 subgraph clusterdomain {
                     label = "Domain Electives";
-                    domain1 -> domain2 -> domain3
+                    domain1 -> domain2 [style="invis"]
+                    domain2 -> domain3 [style="invis"]
                 }               
             }
         }    
