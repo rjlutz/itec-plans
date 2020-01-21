@@ -27,6 +27,7 @@ digraph G {
     mgmt3000[label = "MGMT 3000\nPrinciples of\nManagement"]
 
     //Systems and Seurity
+    itec3150[label = "ITEC 3150\nAdvanced Programming"]
     itec3300[label = "ITEC 3300\nInformation Security"]
     itec3600[label = "ITEC 3600\nOperating Systems"]
     itec3700[label = "ITEC 3700\nSystems Analysis\nand Design"]
