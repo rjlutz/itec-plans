@@ -96,6 +96,7 @@ digraph G {
             itec2150 -> itec4700
 
             math1113 -> math2200
+            math1111 -> math1113
             math1111 -> math2000
             math1111 -> math2300 [lhead=clusterdiscrete]
            
