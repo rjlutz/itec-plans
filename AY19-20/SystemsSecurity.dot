@@ -19,6 +19,7 @@ digraph G {
     busa2105[label = "BUSA 2105\nCommunications in\nthe Business Environment"]
     busa2106[label = "BUSA 2106\nLegal Environment\nof Business"]
     busa3100[label = "BUSA 3100\nManagement \nInformation Systems"]
+    math1111[label = "MATH 1111\nCollege Algebra"]
     math1113[label = "MATH 1113\nPre-Calculus"]
     math2300[label = "MATH 2300\nDiscrete Math"]
     math2000[label = "MATH 2000\nStatistics"]
