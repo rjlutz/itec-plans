@@ -29,6 +29,7 @@ digraph G {
     // Enterprise Systems
     itec3350[label = "ITEC 3350\nDigital Commerce"]
     itec3700[label = "ITEC 3700\nSystems Analysis\nand Design"]
+    itec4100[label = "ITEC 4100\nAdvanced Networks"]
     itec4150[label = "ITEC 4150\nEnterprise Process Integration"]
     itec4200[label = "ITEC 4200\nAdvanced Databases"]
     itec4210[label = "ITEC 4210\nInformation Analytics"]
@@ -39,6 +40,7 @@ digraph G {
     instructorapproval[label = "Instructor Approval"]
     acct2101[label = "ACCT 2101\nIntroduction to Financial Accounting"]
     acct2102[label = "ACCT 2102\nIntroduction to Mangerial Accounting"]
+    math1111[label = "MATH 1111\nCollege Algebra"]
     mgmt4220[label = "MGMT 4220\nProject Management"]
 
 
