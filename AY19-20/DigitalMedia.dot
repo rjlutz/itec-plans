@@ -91,8 +91,8 @@ digraph G {
             itec2110 -> itec4550 [lhead=clusteritecopt1]
             itec2150 -> itec4550 [color=red]
             
-            itec4450 -> itec4110 [label="pick 2 of 4"]
-            itec4130 -> itec4110 [ltail=clusteritecopt1 label="pick 2 of 4"]
+            itec4450 -> itec4110 [label="needs 2 (of 4)"]
+            itec4130 -> itec4110 [ltail=clusteritecopt1 label="needs 2 (of 4)"]
 
             arts2020
             arts2010
