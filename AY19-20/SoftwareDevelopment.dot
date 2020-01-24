@@ -136,7 +136,7 @@ digraph G {
                 node [style=filled];
                 style=filled;
                 // graph[style=solid]
-                color="#33ffff"
+                color="#AEF9F5"
 
                 subgraph clusteritecopt1 {
                     label = "ITEC Option 1";
