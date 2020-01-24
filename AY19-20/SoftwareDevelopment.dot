@@ -78,7 +78,7 @@ digraph G {
             itec2201 -> itec3860 [color=blue]
             itec3860 -> itec3870
             itec2201 -> itec3900 [ltail=cluster22013100 color=blue]
-            itec3860 -> itec4260 -> itec4860
+            itec3860 -> itec4260 [lhead=clusterQA]
             itec2201 -> mgmt3000 [ltail=cluster22013100 color=blue]
 
             math1113 -> math2200
@@ -121,6 +121,14 @@ digraph G {
                 style=filled;
                 color=lightgrey;
                 math2300 -> itec2150
+            }
+
+            subgraph clusterQA {
+                label = "Prereq w/ Concurrency";
+                node [style=filled];
+                style=filled;
+                color=lightgrey;
+                itec4260 -> itec4860
             }
 
             subgraph clusterotherrequired {
