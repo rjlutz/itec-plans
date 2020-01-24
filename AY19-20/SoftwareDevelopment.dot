@@ -132,38 +132,47 @@ digraph G {
             }
 
             subgraph clusterotherrequired {
-                label = "Other Required"
+                label = "Other Required (Pick 1 Option)"
                 node [style=filled];
                 style=filled;
-                graph[style=solid]
-                color=black;
+                // graph[style=solid]
+                color="#33ffff"
 
                 subgraph clusteritecopt1 {
                     label = "ITEC Option 1";
+                    graph[style=solid]
+                    color=black
                     itec2130 -> itec4450
                     itec2150 -> itec4450 [color=red]
                 }
 
                 subgraph clusteritecopt2 {
-                    label = "ITEC Option 2\n(Select 2)";
-                    
+                    label = "ITEC Option 2\n(Select 2)"
+                    graph[style=solid]
+                    color=black
                     itec3450 -> itec4650
                     itec4550
                 }
 
                 subgraph clusterbiolopt {
                     label = "Biology Option";
+                    graph[style=solid]
+                    color=black
                     biol1107k -> biol1108k
                 }
 
                 subgraph clustermathopt {
                     label = "Math Option";
+                    graph[style=solid]
+                    color=black
                     math2210
                     math2450
                 }
 
                 subgraph clusterphysopt {
                     label = "Physics Option"
+                    graph[style=solid]
+                    color=black
                     phys2211k -> phys2212k
                 }
             }
