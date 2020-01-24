@@ -135,7 +135,6 @@ digraph G {
                 label = "Other Required (Pick 1 Option)"
                 node [style=filled];
                 style=filled;
-                // graph[style=solid]
                 color="#AEF9F5"
 
                 subgraph clusteritecopt1 {
