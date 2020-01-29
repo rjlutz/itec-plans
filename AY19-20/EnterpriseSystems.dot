@@ -133,11 +133,12 @@ digraph G {
                 label = "Other Required"
                 node [style=filled];
                 style=filled;
-                graph[style=solid]
-                color=black;
+                color="#AEF9F5";
 
                 subgraph clusteritecopt1 {
                     label = "Select One";
+                    graph[style=solid]
+                    color=black;
                     areaF -> stec4500
                     instructorapproval -> stec4500
                     instructorapproval -> itec4900
@@ -145,6 +146,8 @@ digraph G {
 
                 subgraph clusteritecopt2 {
                     label = "Select One";
+                    graph[style=solid]
+                    color=black;
                     itec4100
                     itec4200
                 }

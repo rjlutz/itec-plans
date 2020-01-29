@@ -135,24 +135,27 @@ digraph G {
                 node [style=filled];
                 style=filled;
                 graph[style=solid]
-                color=black;
+                color="#AEF9F5"
 
 
                 subgraph clusteritecoptions {
                     label = "Pick from Enterprise or Software Sequence"
                     node [style=filled];
                     style=filled;
-                    graph[style=solid]
-                    color=black;
+                    color="#AEF9F5"
 
                     subgraph clusteritecopt1 {
                         label = "Enterprise";
+                        graph[style=solid]
+                        color=black
                         itec4150
                         itec4750
                     }
 
                     subgraph clusteritecopt2 {
                         label = "Software";
+                        graph[style=solid]
+                        color=black
                         itec3870
                         itec4200
                     }
@@ -160,6 +163,8 @@ digraph G {
 
                 subgraph clusterdomain {
                     label = "Domain Electives";
+                    graph[style=solid]
+                    color=black
                     domain1 -> domain2 [style="invis"]
                     domain2 -> domain3 [style="invis"]
                 }               

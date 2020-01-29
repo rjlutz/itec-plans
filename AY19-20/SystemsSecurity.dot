@@ -42,7 +42,7 @@ digraph G {
     phys2211k[label = "PHYS 2211K\nPrinciples of\nPhysics I"]
     phys2212k[label = "PHYS 2212K\nPrinciples of\nPhysics II"]
     biol1107k[label = "BIOL 1107K\nPrinciples of\nBiology I"]
-    biol1108k[label = "BIOL 1107K\nPrinciples of\nBiology II"]
+    biol1108k[label = "BIOL 1108K\nPrinciples of\nBiology II"]
 
 
     subgraph clusterss {
@@ -131,34 +131,43 @@ digraph G {
                 label = "Other Required"
                 node [style=filled];
                 style=filled;
-                graph[style=solid]
-                color=black;
+                color="#AEF9F5"
 
                 subgraph clusteritecopt1 {
                     label = "ITEC Option 1";
+                    graph[style=solid]
+                    color=black;
                     itec2130 -> itec4450
                     itec2150 -> itec4450 [color=red]
                 }
 
                 subgraph clusteritecopt2 {
                     label = "ITEC Option 2";
+                    graph[style=solid]
+                    color=black;
                     itec3100 -> itec4100
                     itec3200 -> itec4200
                 }
 
                 subgraph clusterbiolopt {
                     label = "Biology Option";
+                    graph[style=solid]
+                    color=black;
                     biol1107k -> biol1108k
                 }
 
                 subgraph clustermathopt {
                     label = "Math Option";
+                    graph[style=solid]
+                    color=black;
                     math2210
                     math2450
                 }
 
                 subgraph clusterphysopt {
                     label = "Physics Option"
+                    graph[style=solid]
+                    color=black;
                     phys2211k -> phys2212k
                 }
             }
