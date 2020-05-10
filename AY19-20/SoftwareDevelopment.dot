@@ -70,8 +70,8 @@ digraph G {
             itec2150 -> itec3150 [/*lltail=clusterdiscrete*/ color=red]
 
             itec2140 -> itec3100 [color=purple]
-            itec2201 -> itec3200 [color=blue ltail=cluster22013100];
-            itec2140 -> itec3200 [ltail=cluster21202140 color=purple]
+            itec2201 -> itec3200 [color=blue ltail=cluster22013100 dir=both arrowtail=invempty];
+            itec2140 -> itec3200 [ltail=cluster21202140 color=purple dir=both arrowtail=invempty]
 
             itec2150 -> itec4650 [color=red]
             itec2150 -> itec3700 [/*lltail=clusterdiscrete*/ color=red]
