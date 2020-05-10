@@ -14,7 +14,7 @@ digraph G {
     itec2150[label = "ITEC 2150\nIntermediate Programming" color=red fontcolor=red shape=box]
     itec2201[label = "ITEC 2201\nIntroduction to\nInformation Systems" color=blue fontcolor=blue shape=box]
     itec3100[label = "ITEC 3100\nIntroduction to Networks" shape=box]
-    itec3200[label = "ITEC 3200\nIntroduction to Databases" shape=box]
+    itec3200[label = "ITEC 3200\nIntroduction\nto Databases" shape=box]
     itec3900[label = "ITEC 3900\nProfessional Practice\nand Ethics" shape=box]
     busa2105[label = "BUSA 2105\nCommunications in\nthe Business Environment" shape=box]
     busa2106[label = "BUSA 2106\nLegal Environment\nof Business" shape=box]
@@ -27,12 +27,12 @@ digraph G {
     mgmt3000[label = "MGMT 3000\nPrinciples of\nManagement" shape=box]
 
     // Software Development 
-    itec3150[label = "ITEC 3150\nAdvanced Programming" shape=box]
+    itec3150[label = "ITEC 3150\nAdvanced\nProgramming" shape=box]
     itec3450[label = "ITEC 3450\nComputer Graphics\nand Multimedia" shape=box]
     itec3700[label = "ITEC 3700\nSystems Analysis\nand Design" shape=box]
-    itec3860[label = "ITEC 3860\nSoftware Development I" shape=box]
-    itec3870[label = "ITEC 3870\nSoftware Development II" shape=box]
-    itec4260[label = "ITEC 4260\nSoftware Testing and QA" shape=box]
+    itec3860[label = "ITEC 3860\nSoftware\nDevelopment I" shape=box]
+    itec3870[label = "ITEC 3870\nSoftware\nDevelopment II" shape=box]
+    itec4260[label = "ITEC 4260\nSoftware Testing\n and QA" shape=box]
     itec4860[label = "ITEC 4860\nSoftware Development\nProject" shape=box]
     itec4450[label = "ITEC 4450\nWeb Development" shape=box]
     itec4550[label = "ITEC 4550\nMobile Application\nDevelopment" shape=box]
@@ -73,6 +73,7 @@ digraph G {
             itec2201 -> itec3200 [color=blue ltail=cluster22013100];
             itec2140 -> itec3200 [ltail=cluster21202140 color=purple]
 
+            itec2150 -> itec4650 [color=red]
             itec2150 -> itec3700 [/*lltail=clusterdiscrete*/ color=red]
             itec2201 -> itec3700 [color=blue]
 
