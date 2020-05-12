@@ -21,4 +21,24 @@ $ ./build.zsh
 
 Please see the 'outputs' folder for the generated graphs
 
+# Current plans (AY19-20)
 
+## Data Science and Analytics
+
+![Data Science and Analytics](AY19-20/outputs/DataScienceAndAnalytics.png)
+
+## Digital Media
+
+![Digital Media](AY19-20/outputs/DigitalMedia.png)
+
+## Enterprise Systems
+
+![Enterprise Systems](AY19-20/outputs/EnterpriseSystems.png)
+
+## Software Development
+
+![Software Development](AY19-20/outputs/SoftwareDevelopment.png)
+
+## Systems Security
+
+![Systems Security](AY19-20/outputs/SystemsSecurity.png)
