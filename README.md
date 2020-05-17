@@ -28,6 +28,9 @@ Please see the 'outputs' folder for the generated graphs
 [PDF link](AY19-20/outputs/DataScienceAndAnalytics.pdf)
 ![Data Science and Analytics](AY19-20/outputs/DataScienceAndAnalytics.png)
 
+Another drawing:
+![Data Science and Analytics](AY19-20/manual/DSA-mindmup-fa2019-ITEC4000.png)
+
 ## Digital Media
 
 [PDF link](AY19-20/outputs/DigitalMedia.pdf)
