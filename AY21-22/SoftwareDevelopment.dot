@@ -78,6 +78,7 @@ digraph G {
             itec2201 -> itec3700 [color=blue]
 
             itec2150 -> itec3860 [color=red]
+            itec2130 -> itec3860 // new proposed, but not submitted yet
             itec2130 -> itec4450 // taken outside of option
             itec2201 -> itec3860 [color=blue]
             itec3150 -> itec3870 // new proposed
@@ -89,6 +90,7 @@ digraph G {
             itec3200 -> itec4860
             //itec3150 -> itec4860 redundant after proposal
             itec3870 -> itec4860
+            itec4260 -> itec4860 // Proposed, but not submitted yet
 
             math1113 -> math2200
             math1111 -> math1113
@@ -133,14 +135,9 @@ digraph G {
                 math2300 -> itec2150 [constraint=false, label="concurrent", style=dashed];
             }
 
+            /* Proposed to be converted to regular prereq
             subgraph clusterQA {
-                /*label = "Prereq w/ Concurrency";
-                node [style=filled];
-                style=filled;
-                color=lightgrey;*/
-                itec4260 -> itec4860 [constraint=false, label="concurrent", style=dashed];
-
-            }
+            }*/
 
             subgraph clusterotherrequired {
                 label = "Other Required (Pick One Option)"

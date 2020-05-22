@@ -24,3 +24,4 @@
 ![Software Development](AY20-21/outputs/SoftwareDevelopment.png)
 
 ## Proposed for AY21-22: ITEC 3860 and ITEC 4860 prereqs
+![Software Development](AY21-22/outputs/SoftwareDevelopment.png)
