@@ -23,7 +23,7 @@ Please see the 'outputs' folder for the generated graphs
 
 # Current plans (AY19-20)
 
-See [proposed changes for AY20-21](CHANGES.md).
+Also see [proposed future changes](CHANGES.md).
 
 ## Data Science and Analytics
 
