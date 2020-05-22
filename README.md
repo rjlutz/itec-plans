@@ -31,7 +31,7 @@ Also see [proposed future changes](CHANGES.md).
 ![Data Science and Analytics](AY19-20/outputs/DataScienceAndAnalytics.png)
 
 Another drawing:
-![Data Science and Analytics](AY19-20/manual/DSA-mindmup-fa2019-ITEC4000.png)
+![Data Science and Analytics](AY19-20/manual/DSA-mindmup.png)
 
 ## Digital Media
 
