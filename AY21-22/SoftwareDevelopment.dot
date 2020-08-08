@@ -3,17 +3,17 @@ digraph G {
     node [shape = box fontname="Sans serif" fontsize="14" style="rounded"];
     compound = true //  needed to link clusters and nodes
     splines = true
-    ranksep=0.75    
+    ranksep = "0.75"
 
-     // All
+    // All
     itec1001[label = "ITEC 1001\nIntroduction \nto Computing" color=darkgray fontcolor=darkgray]
     itec2110[label = "ITEC 2110\nDigital Media"]
     itec2120[label = "ITEC 2120\nIntroduction\nto Programming"]
     itec2130[label = "ITEC 2130\nWeb Technologies"]
     itec2140[label = "ITEC 2140\nProgramming \nFundamentals" color=purple fontcolor=purple]
-    itec2150[label = "ITEC 2150\nIntermediate Programming" color=red fontcolor=red]
+    itec2150[label = "ITEC 2150\nIntermediate\nProgramming" color=red fontcolor=red]
     itec2201[label = "ITEC 2201\nIntroduction to\nInformation Systems" color=blue fontcolor=blue]
-    itec3100[label = "ITEC 3100\nIntroduction to Networks"]
+    itec3100[label = "ITEC 3100\nIntroduction\nto Networks"]
     itec3200[label = "ITEC 3200\nIntroduction\nto Databases"]
     itec3900[label = "ITEC 3900\nProfessional Practice\nand Ethics"]
     busa2105[label = "BUSA 2105\nCommunications in\nthe Business Environment"]
@@ -46,7 +46,7 @@ digraph G {
 
 
     subgraph clustersd {
-            label="GGC Information Technology - Software Development Track (AY19-20)"
+            label="GGC Information Technology - Software Development Track (AY20-21 Proposed)"
             fontsize="36"
 
         subgraph clusterrequired {
@@ -78,15 +78,19 @@ digraph G {
             itec2201 -> itec3700 [color=blue]
 
             itec2150 -> itec3860 [color=red]
+            itec2130 -> itec3860 // new proposed, but not submitted yet
+            itec2130 -> itec4450 // taken outside of option
             itec2201 -> itec3860 [color=blue]
+            itec3150 -> itec3870 // new proposed
             itec3860 -> itec3870
             itec2201 -> itec3900 [ltail=cluster22013100 color=blue]
             itec3860 -> itec4260 //[lhead=clusterQA]
             itec2201 -> mgmt3000 [ltail=cluster22013100 color=blue]
 
             itec3200 -> itec4860
-            itec3150 -> itec4860
+            //itec3150 -> itec4860 redundant after proposal
             itec3870 -> itec4860
+            itec4260 -> itec4860 // Proposed, but not submitted yet
 
             math1113 -> math2200
             math1111 -> math1113
@@ -131,14 +135,9 @@ digraph G {
                 math2300 -> itec2150 [constraint=false, label="concurrent", style=dashed];
             }
 
+            /* Proposed to be converted to regular prereq
             subgraph clusterQA {
-                /*label = "Prereq w/ Concurrency";
-                node [style=filled];
-                style=filled;
-                color=lightgrey;*/
-                itec4260 -> itec4860 [constraint=false, label="concurrent", style=dashed];
-
-            }
+            }*/
 
             subgraph clusterotherrequired {
                 label = "Other Required (Pick One Option)"
@@ -146,19 +145,19 @@ digraph G {
                 style="filled,rounded";
                 color="#AEF9F5"
 
+                /* Proposed to be removed
                 subgraph clusteritecopt1 {
                     label = "ITEC Option 1";
                     graph[style=solid]
                     color=black
-                    itec2130 -> itec4450
-                    itec2150 -> itec4450 [color=red]
-                }
+                }*/
 
                 subgraph clusteritecopt2 {
-                    label = "ITEC Option 2\n(Select 2)"
+                    label = "ITEC Option\n(Select 2)"
                     graph[style=solid]
                     color=black
                     itec3450 -> itec4650
+                    itec2150 -> itec4450 [color=red]
                     itec4550
                 }
 
