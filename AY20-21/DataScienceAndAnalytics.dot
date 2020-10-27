@@ -1,0 +1,174 @@
+digraph G {
+
+    node [shape = record, fontname="Sans serif" fontsize="14"];
+    compound = true //  needed to link clusters and nodes
+    splines = true
+    ranksep=0.75
+
+     // All
+    itec1001[label = "ITEC 1001\nIntroduction \nto Computing" color=darkgray fontcolor=darkgray]
+    itec2110[label = "ITEC 2110\nDigital Media"]
+    itec2120[label = "ITEC 2120\nIntroduction\nto Programming"]
+    itec2130[label = "ITEC 2130\nWeb Technologies"]
+    itec2140[label = "ITEC 2140\nProgramming \nFundamentals" color=purple fontcolor=purple]
+    itec2150[label = "ITEC 2150\nIntermediate Programming" color=red fontcolor=red]
+    itec2201[label = "ITEC 2201\nIntrodcution to\nInformation Systems" color=blue fontcolor=blue]
+    itec3100[label = "ITEC 3100\nIntrodcution to Networks"]
+    itec3200[label = "ITEC 3200\nIntrodcution to Databases"]
+    itec3900[label = "ITEC 3900\nProfessional Practice\nand Ethics"]
+    busa2105[label = "BUSA 2105\nCommunications in\nthe Business Environment"]
+    busa2106[label = "BUSA 2106\nLegal Environment\nof Business"]
+    busa3100[label = "BUSA 3100\nManagement \nInformation Systems"]
+    math1111[label = "MATH 1111\nCollege Algebra"]
+    math1113[label = "MATH 1113\nPre-Calculus"]
+    math2300[label = "MATH 2300\nDiscrete Math"]
+    math2000[label = "MATH 2000\nStatistics"]
+    math2200[label = "MATH 2200\nCalculus I"]
+    mgmt3000[label = "MGMT 3000\nPrinciples of\nManagement"]
+
+    // Data Science and Analytics
+    itec3150[label = "ITEC 3150\nAdvanced Programming"]
+    itec3700[label = "ITEC 3700\nSystems Analysis\nand Design"]
+    itec3860[label = "ITEC 3860\nSoftware Development I"]
+    itec3870[label = "ITEC 3870\nSoftware Development II"]
+    itec4150[label = "ITEC 4150\nEnterprise Process Integration"]
+    itec4200[label = "ITEC 4200\nAdvanced Databases"]
+    itec4210[label = "ITEC 4210\nInformation Analytics"]
+    itec4220[label = "ITEC 4220\nAdvanced Data Analytics"]
+    itec4230[label = "ITEC 4230\nData Science & Analytics Capstone Project"]
+    itec4750[label = "ITEC 4750\nEnterprise Architecture Design"]
+    itec4700[label = "ITEC 4700\nArtificial Intelligence"]
+    domain1[label = "Domain Elective 1"]
+    domain2[label = "Domain Elective 2"]
+    domain3[label = "Domain Elective 3"]
+    math2450[label = "MATH 2450\nLinear Algebra"]
+
+
+    subgraph clusterdsa {
+        label="GGC Information Technology\nData Science and Analytics Track\nAY20-21"
+
+        subgraph clusterrequired {
+            label=""
+            node [style=filled];
+            style=filled;
+
+            color="#FFFFFF";
+
+            itec1001 -> itec2110 [color=lightgray]
+
+            itec1001 -> itec2120 [color=lightgray]
+            itec1001 -> itec2130 [color=lightgray]
+            itec1001 -> itec2201 [color=lightgray]
+            itec1001 -> busa3100 [color=lightgray]
+            itec2140 -> itec2150 [color=purple]
+            itec2140 -> itec3100 [color=purple]
+            itec2201 -> itec3200 [ltail=cluster22013100 color=blue]
+            itec2140 -> itec3200 [ltail=cluster21202140 color=purple]
+            itec2201 -> mgmt3000 [ltail=cluster22013100 color=blue]
+
+            itec2150 -> itec4150 [color=red]
+            itec3200 -> itec4150
+            itec3700 -> itec4150
+            itec2201 -> itec4750 [color=blue]
+            itec4150 -> itec4750
+            
+            busa2106 -> busa3100
+            busa2105 -> busa3100
+            itec1001 -> itec2140 [color=lightgray]
+            itec2150 -> itec3150 [lltail=clusterdiscrete color=red]
+
+            itec2150 -> itec3700 [lltail=clusterdiscrete color=red]
+            itec2201 -> itec3700 [color=blue]
+
+            itec2150 -> itec3860 [color=red]
+            itec2201 -> itec3860 [color=blue]
+            itec3860 -> itec3870
+            itec2201 -> itec3900 [ltail=cluster22013100 color=blue]
+            itec2150 -> itec4210
+            itec3200 -> itec4210
+            itec4210 -> itec4220
+            math2000 -> itec4220
+            math2200 -> math2450
+            math2450 -> itec4220
+            itec3860 -> itec4230
+            itec4220 -> itec4230
+            itec3150 -> itec4230
+            itec4700 -> itec4230
+            itec2150 -> itec4700
+
+            math1113 -> math2200
+            math1111 -> math1113
+            math1111 -> math2000
+            math1111 -> math2300 [lhead=clusterdiscrete]
+           
+            itec3200 -> itec4200
+
+            subgraph cluster21202140 {
+                label = "Introductory Programming";
+                color=lightgrey;
+                itec2120
+                itec2140
+            }
+            subgraph cluster22013100 {
+                label = "MIS/IS Options";
+                color=lightgrey;
+                busa3100
+                itec2201
+            }
+            subgraph cluster21052106 {
+                label = "Business Courses"
+                color=lightgrey;
+                busa2105
+                busa2106
+            }
+            
+            subgraph clusterdiscrete {
+                label = "Prereq w/ Concurrency";
+                node [style=filled];
+                style=filled;
+                color=lightgrey;
+                math2300 -> itec2150
+            }
+
+            subgraph clusterotherrequired {
+                label = "Other Required"
+                node [style=filled];
+                style=filled;
+                graph[style=solid]
+                color="#AEF9F5"
+
+
+                subgraph clusteritecoptions {
+                    label = "Pick from Enterprise or Software Sequence"
+                    node [style=filled];
+                    style=filled;
+                    color="#AEF9F5"
+
+                    subgraph clusteritecopt1 {
+                        label = "Enterprise";
+                        graph[style=solid]
+                        color=black
+                        itec4150
+                        itec4750
+                    }
+
+                    subgraph clusteritecopt2 {
+                        label = "Software";
+                        graph[style=solid]
+                        color=black
+                        itec3870
+                        itec4200
+                    }
+                }
+
+                subgraph clusterdomain {
+                    label = "Domain Electives";
+                    graph[style=solid]
+                    color=black
+                    domain1 -> domain2 [style="invis"]
+                    domain2 -> domain3 [style="invis"]
+                }               
+            }
+        }    
+    }
+}

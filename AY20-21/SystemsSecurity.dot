@@ -1,20 +1,20 @@
 digraph G {
 
-    node [shape = box fontname="Sans serif" fontsize="14" style="rounded"];
+    node [shape = record, fontname="Sans serif" fontsize="14"];
     compound = true //  needed to link clusters and nodes
     splines = true
-    ranksep = "0.75"
+    ranksep=0.75
 
-    // All
+     // All
     itec1001[label = "ITEC 1001\nIntroduction \nto Computing" color=darkgray fontcolor=darkgray]
     itec2110[label = "ITEC 2110\nDigital Media"]
     itec2120[label = "ITEC 2120\nIntroduction\nto Programming"]
     itec2130[label = "ITEC 2130\nWeb Technologies"]
     itec2140[label = "ITEC 2140\nProgramming \nFundamentals" color=purple fontcolor=purple]
-    itec2150[label = "ITEC 2150\nIntermediate\nProgramming" color=red fontcolor=red]
-    itec2201[label = "ITEC 2201\nIntroduction to\nInformation Systems" color=blue fontcolor=blue]
-    itec3100[label = "ITEC 3100\nIntroduction\nto Networks"]
-    itec3200[label = "ITEC 3200\nIntroduction\nto Databases"]
+    itec2150[label = "ITEC 2150\nIntermediate Programming" color=red fontcolor=red]
+    itec2201[label = "ITEC 2201\nIntrodcution to\nInformation Systems" color=blue fontcolor=blue]
+    itec3100[label = "ITEC 3100\nIntrodcution to Networks"]
+    itec3200[label = "ITEC 3200\nIntrodcution to Databases"]
     itec3900[label = "ITEC 3900\nProfessional Practice\nand Ethics"]
     busa2105[label = "BUSA 2105\nCommunications in\nthe Business Environment"]
     busa2106[label = "BUSA 2106\nLegal Environment\nof Business"]
@@ -26,17 +26,17 @@ digraph G {
     math2200[label = "MATH 2200\nCalculus I"]
     mgmt3000[label = "MGMT 3000\nPrinciples of\nManagement"]
 
-    // Software Development 
-    itec3150[label = "ITEC 3150\nAdvanced\nProgramming"]
-    itec3450[label = "ITEC 3450\nComputer Graphics\nand Multimedia"]
+    //Systems and Seurity
+    itec3150[label = "ITEC 3150\nAdvanced Programming"]
+    itec3300[label = "ITEC 3300\nInformation Security"]
+    itec3600[label = "ITEC 3600\nOperating Systems"]
     itec3700[label = "ITEC 3700\nSystems Analysis\nand Design"]
-    itec3860[label = "ITEC 3860\nSoftware\nDevelopment I"]
-    itec3870[label = "ITEC 3870\nSoftware\nDevelopment II"]
-    itec4260[label = "ITEC 4260\nSoftware Testing\n and QA"]
-    itec4860[label = "ITEC 4860\nSoftware Development\nProject"]
+    itec4100[label = "ITEC 4100\nAdvanced Networks"]
+    itec4200[label = "ITEC 4200\nAdvanced Databases"]
+    itec4320[label = "ITEC 4320\nInternet Security"]
+    itec4330[label = "ITEC 4330\nSystems Administration"]
     itec4450[label = "ITEC 4450\nWeb Development"]
-    itec4550[label = "ITEC 4550\nMobile Application\nDevelopment"]
-    itec4650[label = "ITEC 4650\nGame Development"]
+    itec4810[label = "ITEC 4810\nIT Project I"]
     math2210[label = "MATH 2210\nCalculus II"]
     math2450[label = "MATH 2450\nLinear Algebra"]
     phys2211k[label = "PHYS 2211K\nPrinciples of\nPhysics I"]
@@ -45,66 +45,60 @@ digraph G {
     biol1108k[label = "BIOL 1108K\nPrinciples of\nBiology II"]
 
 
-    subgraph clustersd {
-            label="GGC Information Technology - Software Development Track (AY20-21)"
-            fontsize="36"
+    subgraph clusterss {
+        label="GGC Information Technology\nSystems and Security Track\nAY20-21"
 
         subgraph clusterrequired {
             label=""
-            node [style="filled,rounded"];
-            style="filled,rounded";
-            fontsize="24"
+            node [style=filled];
+            style=filled;
 
             color="#FFFFFF";
-            
-            itec1001 -> itec2110 [color=lightgray]
+
+            itec1001 -> itec2110  [color=lightgray]
             itec1001 -> itec2120 [color=lightgray]
             itec1001 -> itec2130 [color=lightgray]
             itec1001 -> itec2201 [color=lightgray]
             itec1001 -> busa3100 [color=lightgray]
+            itec2140 -> itec2150 [color=purple]
+            itec2140 -> itec3100 [color=purple]
+            itec2150 -> itec3150 [lltail=clusterdiscrete color=red]
+            itec2201 -> itec3200 [ltail=cluster22013100 color=blue]
+            itec2140 -> itec3200 [ltail=cluster21202140 color=purple]
+
+            itec2201 -> itec3300 [ltail=cluster22013100 color=blue]
+            itec2140 -> itec3300 [ltail=cluster21202140 color=purple]
+            itec2150 -> itec3600 
+            itec2201 -> itec3600
+            itec2150 -> itec4320
+            itec3100 -> itec4320
+            itec3300 -> itec4320
+            itec3100 -> itec4330
+            itec3600 -> itec4330
+            itec3100 -> itec4810
+            itec3200 -> itec4810
+            itec3300 -> itec4810
+            itec3700 -> itec4810
 
             busa2106 -> busa3100
             busa2105 -> busa3100
             itec1001 -> itec2140 [color=lightgray]
-            itec2140 -> itec2150 [color=purple]
-            itec2150 -> itec3150 [/*lltail=clusterdiscrete*/ color=red]
 
-            itec2140 -> itec3100 [color=purple]
-            itec2201 -> itec3200 [color=blue ltail=cluster22013100 dir=both arrowtail=invempty];
-            itec2140 -> itec3200 [ltail=cluster21202140 color=purple dir=both arrowtail=invempty]
-
-            itec2150 -> itec4650 [color=red]
-            itec2150 -> itec3700 [/*lltail=clusterdiscrete*/ color=red]
+            itec2150 -> itec3700 [lltail=clusterdiscrete color=red]
             itec2201 -> itec3700 [color=blue]
 
-            itec2150 -> itec3860 [color=red]
-            itec2130 -> itec4450 // taken outside of option
-            itec2201 -> itec3860 [color=blue]
-            itec3150 -> itec3870 // new proposed
-            itec3860 -> itec3870
             itec2201 -> itec3900 [ltail=cluster22013100 color=blue]
-            itec3860 -> itec4260 //[lhead=clusterQA]
             itec2201 -> mgmt3000 [ltail=cluster22013100 color=blue]
-
-            itec3200 -> itec4860
-            //itec3150 -> itec4860 redundant after proposal
-            itec3870 -> itec4860
 
             math1113 -> math2200
             math1111 -> math1113
             math1111 -> math2000
-            math1111 -> math2300 //[lhead=clusterdiscrete]
-            math1111 -> itec2140
+            math1111 -> math2300 [lhead=clusterdiscrete]
             math2200 -> math2210 [lhead=clustermathopt]
             math2200 -> math2450 [lhead=clustermathopt]
             itec3200 -> itec4450
 
-            math1113 -> itec3450
-            itec2110 -> itec3450 [lhead=clusteritecopt2]
-            itec2140 -> itec3450 [color=purple]
-            itec2110 -> itec4550 [lhead=clusteritecopt2]
             math2200 -> phys2211k [lhead=clusterphysopt]
-            itec2150 -> itec4550 [color=red]
 
             subgraph cluster21202140 {
                 label = "Introductory Programming";
@@ -126,56 +120,46 @@ digraph G {
             }
             
             subgraph clusterdiscrete {
-                /*label = "Prereq w/ Concurrency";
+                label = "Prereq w/ Concurrency";
                 node [style=filled];
                 style=filled;
-                color=lightgrey;*/
-                math2300 -> itec2150 [constraint=false, label="concurrent", style=dashed];
-            }
-
-            subgraph clusterQA {
-                /*label = "Prereq w/ Concurrency";
-                node [style=filled];
-                style=filled;
-                color=lightgrey;*/
-
-                itec4260 -> itec4860 [constraint=false, label="concurrent", style=dashed];
-                itec4260 -> itec3870 [constraint=false, label="concurrent", style=dashed];
+                color=lightgrey;
+                math2300 -> itec2150
             }
 
             subgraph clusterotherrequired {
-                label = "Other Required (Pick One Option)"
-                node [style="filled,rounded"];
-                style="filled,rounded";
+                label = "Other Required"
+                node [style=filled];
+                style=filled;
                 color="#AEF9F5"
 
-                /* Proposed to be removed
                 subgraph clusteritecopt1 {
                     label = "ITEC Option 1";
                     graph[style=solid]
-                    color=black
-                }*/
+                    color=black;
+                    itec2130 -> itec4450
+                    itec2150 -> itec4450 [color=red]
+                }
 
                 subgraph clusteritecopt2 {
-                    label = "ITEC Option\n(Select 2)"
+                    label = "ITEC Option 2";
                     graph[style=solid]
-                    color=black
-                    itec3450 -> itec4650
-                    itec2150 -> itec4450 [color=red]
-                    itec4550
+                    color=black;
+                    itec3100 -> itec4100
+                    itec3200 -> itec4200
                 }
 
                 subgraph clusterbiolopt {
                     label = "Biology Option";
                     graph[style=solid]
-                    color=black
+                    color=black;
                     biol1107k -> biol1108k
                 }
 
                 subgraph clustermathopt {
                     label = "Math Option";
                     graph[style=solid]
-                    color=black
+                    color=black;
                     math2210
                     math2450
                 }
@@ -183,7 +167,7 @@ digraph G {
                 subgraph clusterphysopt {
                     label = "Physics Option"
                     graph[style=solid]
-                    color=black
+                    color=black;
                     phys2211k -> phys2212k
                 }
             }
