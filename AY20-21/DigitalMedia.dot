@@ -1,0 +1,162 @@
+digraph G {
+
+    node [shape = record, fontname="Sans serif" fontsize="14"];
+    compound = true //  needed to link clusters and nodes
+    splines = true
+    ranksep=0.1
+
+    // All
+    itec1001[label = "ITEC 1001\nIntroduction \nto Computing" color=darkgray fontcolor=darkgray]
+    itec2110[label = "ITEC 2110\nDigital Media"]
+    itec2120[label = "ITEC 2120\nIntroduction\nto Programming"]
+    itec2130[label = "ITEC 2130\nWeb Technologies"]
+    itec2140[label = "ITEC 2140\nProgramming \nFundamentals" color=purple fontcolor=purple]
+    itec2150[label = "ITEC 2150\nIntermediate Programming" color=red fontcolor=red]
+    itec2201[label = "ITEC 2201\nIntrodcution to\nInformation Systems" color=blue fontcolor=blue]
+    itec3100[label = "ITEC 3100\nIntrodcution to Networks"]
+    itec3200[label = "ITEC 3200\nIntrodcution to Databases"]
+    itec3900[label = "ITEC 3900\nProfessional Practice\nand Ethics"]
+    busa2105[label = "BUSA 2105\nCommunications in\nthe Business Environment"]
+    busa2106[label = "BUSA 2106\nLegal Environment\nof Business"]
+    busa3100[label = "BUSA 3100\nManagement \nInformation Systems"]
+    math1111[label = "MATH 1111\nCollege Algebra"]
+    math1113[label = "MATH 1113\nPre-Calculus"]
+    math2300[label = "MATH 2300\nDiscrete Math"]
+    math2000[label = "MATH 2000\nStatistics"]
+    math2200[label = "MATH 2200\nCalculus I"]
+    mgmt3000[label = "MGMT 3000\nPrinciples of\nManagement"]
+
+    // Digital Media
+
+    itec3450[label = "ITEC 3450\nComputer Graphics\nand Multimedia"]
+    itec3550[label = "ITEC 3100\nIntrodcution to Networks"]
+    itec4110[label = "ITEC 4110\nDigital Media Capstone Project"]
+    itec4130[label = "ITEC 4130\nHuman Computer Interaction"]
+    itec4450[label = "ITEC 4450\nWeb Development"]
+    itec4550[label = "ITEC 4550\nMobile Application\nDevelopment"]
+    itec4650[label = "ITEC 4650\nGame Development"]
+
+    itec2135[label = "ITEC 2135\nEngineering \nGraphics and Design"]
+    itec3110[label = "ITEC 3110\nDesign Concepts and\nTechniques for Digital Media"]
+    itec4850[label = "ITEC 4850\n3D Modeling and\nComputer Animation"]
+
+    areaC[label = "Area C Completed"]
+    //arts2010[label = "ARTS 2010\nDrawing I"]
+    //arts2020[label = "ARTS 2020\nDrawing II"]
+    engl1101[label = "ENGL 1101\nEnglish Composition I"]
+    engl1102[label = "ENGL 1102\nEnglish Composition II"]
+    engl3880[label = "ENGL 3880\nWriting and Digital Media"]
+    film1005[label = "FILM 1005\nIntroduction\nto Film"] 
+    film3010[label = "FILM 3010\nVideo Production I"]
+    musc3050[label = "MUSC 3050\nMusic Theory I"]
+    musc3550[label = "MUSC 3550\nMusic Production and Sound Design"]
+
+    subgraph clusterdm {
+        label="GGC Information Technology\nDigital Media Track\nAY20-21"
+
+        subgraph clusterrequired {
+            label=""
+            node [style=filled];
+            style=filled;
+
+            color="#FFFFFF";
+            
+            engl1101 -> engl1102 -> engl3880
+            film1005 -> film3010
+            itec2110 -> film3010
+            areaC -> musc3050
+
+            itec1001 -> itec2110 [color=green]
+            itec1001 -> itec2120 [color=green]
+            itec1001 -> itec2130 [color=green]
+            itec1001 -> itec2201 [color=green]
+            itec1001 -> busa3100 [color=green]
+
+            busa2106 -> busa3100
+            busa2105 -> busa3100
+            math1113 -> itec2135
+            itec1001 -> itec2140 [color=green]
+            itec2140 -> itec2150 [color=purple]
+
+            itec2140 -> itec3100 [color=purple]
+            itec2110 -> itec3110
+            itec2201 -> itec3200 [color=blue ltail=cluster22013100];
+            itec2140 -> itec3200 [ltail=cluster21202140 color=purple]
+
+            itec2140 -> itec3450 [color=purple]
+
+            itec2201 -> itec3900 [ltail=cluster22013100 color=blue]
+            itec2201 -> mgmt3000 [ltail=cluster22013100 color=blue]
+
+            math1113 -> math2200
+            math1111 -> math1113
+            math1111 -> math2000
+            math1111 -> math2300 [lhead=clusterdiscrete]
+            itec3200 -> itec4450
+
+            math1113 -> itec3450
+            itec2110 -> itec3450
+            itec2110 -> itec4550 [lhead=clusteritecopt1]
+            itec2150 -> itec4550 [color=red]
+            
+            itec4450 -> itec4110 [label="needs 2 (of 4)"]
+            itec4130 -> itec4110 [ltail=clusteritecopt1 label="needs 2 (of 4)"]
+
+            itec2110 -> itec4850
+            //arts2020
+            //arts2010
+
+            subgraph cluster21202140 {
+                label = "Introductory Programming";
+                color=lightgrey;
+                itec2120
+                itec2140
+            }
+            subgraph cluster22013100 {
+                label = "MIS/IS Options";
+                color=lightgrey;
+                itec2201
+                busa3100
+            }
+            subgraph cluster21052106 {
+                label = "Business Courses"
+                color=lightgrey;
+                busa2105
+                busa2106
+            }
+            
+            subgraph clusterdiscrete {
+                label = "Prereq w/ Concurrency";
+                node [style=filled];
+                style=filled;
+                color=lightgrey;
+                math2300 -> itec2150
+            }
+
+            subgraph clusterotherrequired {
+                label = "Other Required"
+                node [style=filled];
+                style=filled;
+                color="#AEF9F5"
+
+                subgraph clusteritecopt1 {
+                    label = "Select 2";
+                    graph[style=solid]
+                        color=black
+                    itec4130
+                    itec4550
+                    itec4650
+                }
+
+                subgraph clusteritecopt2 {
+                    label = "Select 1 or 2";
+                    graph[style=solid]
+                    color=black
+                    engl3880
+                    film3010
+                    musc3050 -> musc3550
+                }                
+            }
+        }    
+    }
+}
