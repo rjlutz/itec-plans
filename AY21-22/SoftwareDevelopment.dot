@@ -57,15 +57,15 @@ digraph G {
 
             color="#FFFFFF";
             
-            itec1001 -> itec2110 [color=lightgray]
-            itec1001 -> itec2120 [color=lightgray]
-            itec1001 -> itec2130 [color=lightgray]
-            itec1001 -> itec2201 [color=lightgray]
-            itec1001 -> busa3100 [color=lightgray]
+            itec1001 -> itec2110 [color=darkgray]
+            itec1001 -> itec2120 [color=darkgray]
+            itec1001 -> itec2130 [color=darkgray]
+            itec1001 -> itec2201 [color=darkgray]
+            itec1001 -> busa3100 [color=darkgray]
 
             busa2106 -> busa3100
             busa2105 -> busa3100
-            itec1001 -> itec2140 [color=lightgray]
+            itec1001 -> itec2140 [color=darkgray]
             itec2140 -> itec2150 [color=purple]
             itec2150 -> itec3150 [/*lltail=clusterdiscrete*/ color=red]
 
